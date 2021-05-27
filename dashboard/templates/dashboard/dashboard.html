@@ -1,0 +1,9 @@
+{% extends 'dashboard/base.html' %}
+
+{% block content %}
+<form  action="{% url 'phq9test' %}" method="GET">
+  {% csrf_token %}
+  <button type="submit">PHQ-9 Test</button>
+
+</form>
+{% endblock %}
